@@ -1,0 +1,26 @@
+#pragma once
+
+/* Version 1.0 */
+
+#include		<string>
+#include		<vector>
+
+class		RxString :
+	public std::string
+{
+public:
+	RxString(void);
+	RxString(const std::string&);
+	RxString(const char*);
+	~RxString(void);
+
+public:
+	void						ToUpperCase();
+	void						ToLowerCase();
+	std::vector<RxString>*		Split(char);
+
+private:
+	unsigned int				CountSeparator(char);
+	void						RemoveSeparator(RxString&, char);
+};
+
