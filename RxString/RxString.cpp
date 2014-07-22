@@ -1,6 +1,6 @@
 #include "RxString.h"
 
-/* Version 1.0 */
+/* Version 1.1 */
 
 RxString::RxString(void)
 {
@@ -80,10 +80,4 @@ unsigned int				RxString::CountSeparator(char c)
 			++count;
 	}
 	return (count + 1);
-}
-
-void						RxString::RemoveSeparator(RxString& s, char c)
-{
-	while (s.size() > 0 && s[0] == c)
-		s = s.substr(1);
 }

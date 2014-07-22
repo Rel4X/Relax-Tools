@@ -1,6 +1,6 @@
 #pragma once
 
-/* Version 1.0 */
+/* Version 1.1 */
 
 #include		<string>
 #include		<vector>
@@ -21,6 +21,5 @@ public:
 
 private:
 	unsigned int				CountSeparator(char);
-	void						RemoveSeparator(RxString&, char);
 };
 
