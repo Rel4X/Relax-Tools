@@ -2,7 +2,7 @@ Relax-Tools
 ===========
 
 Relax Tools is a tool box with easy to use classes for Random, String, Socket and FileSystem ...
-============================================================================================================
+
 
 Well, all those classes can be improved and optimized ... but I'll do it when I'll need to.
 
@@ -28,6 +28,7 @@ Well, all those classes can be improved and optimized ... but I'll do it when I'
 +---------------+
 | RxString v1.1 |
 +---------------+
+- Modify Split() so it can take multiple separators, like Split(const char*);
 
   == Corrected on vestion 1.1 == 
 - Useless RemoveSeparator() function.
