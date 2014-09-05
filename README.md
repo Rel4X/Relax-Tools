@@ -32,3 +32,7 @@ Well, all those classes can be improved and optimized ... but I'll do it when I'
 
   == Corrected on vestion 1.1 == 
 - Useless RemoveSeparator() function.
+
++-------------+
+| RxTime v1.0 |
++-------------+
