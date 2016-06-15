@@ -7,7 +7,6 @@ Relax Tools is a tool box with easy to use classes for Random, String, Socket an
 Well, all those classes can be improved and optimized ... but I'll do it when I'll need to.
 
 
-
 +--------------+
 | RxWinFs v1.0 |
 +--------------+
@@ -28,11 +27,14 @@ Well, all those classes can be improved and optimized ... but I'll do it when I'
 +---------------+
 | RxString v1.1 |
 +---------------+
-- Modify Split() so it can take multiple separators, like Split(const char*);
-
-  == Corrected on vestion 1.1 == 
+  == Corrected on version 1.1 == 
 - Useless RemoveSeparator() function.
 
+  == Version 1.0 ==
+- Modify Split() so it can take multiple separators, like Split(const char*);
+
 +-------------+
-| RxTime v1.0 |
+| RxTime v1.1 |
 +-------------+
+  == Corrected on version 1.1 ==
+- Now used gettimeofday() instead of clock() so it works even with threads.

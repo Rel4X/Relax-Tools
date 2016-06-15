@@ -1,25 +1,29 @@
 #pragma once
 
-/* version 1.0 */
+/* version 1.1 */
 
-#include	<ctime>
+#include	<sys/time.h>
+#include	<sys/types.h>
+#include	<string.h>
 #include	<map>
 #include	<string>
+#include	<stdlib.h>
 
-#define			DEFAULT_KEY			"IamTheDefaultKeyOfRxString"
+#define		DEFAULT_KEY	"IamTheDefaultKeyOfRxTime"
+#define		RXT_PRECISION	1000000
 
-class			RxTime
+class		RxTime
 {
-private:
-	bool							p_initialized;
-	clock_t							p_initial_clock;
-	std::map<std::string, clock_t>	p_timers;
+ private:
+  bool			p_initialized;
+  struct timeval	p_initial_clock;
+  std::map<std::string, struct timeval>	p_timers;
 
 public:
-	RxTime(void);
-	~RxTime(void);
-
-public:
-	bool		Start(const char* key = 0);
-	float		GetEllapsedTime(const char* key = 0);
+  RxTime(void);
+  ~RxTime(void);
+  
+ public:
+  bool		Start(const char* key = 0);
+  float		GetEllapsedTime(const char* key = 0);
 };
