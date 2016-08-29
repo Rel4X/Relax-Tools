@@ -38,7 +38,7 @@ void						RxString::ToLowerCase()
 	}
 }
 
-std::vector<RxString>*		RxString::Split(char c, bool noempty)
+std::vector<RxString>*		RxString::Split(char c)
 {
 	std::vector<RxString>*	vec;
 	int						idx;
