@@ -17,7 +17,7 @@ public:
 public:
 	void						ToUpperCase();
 	void						ToLowerCase();
-	std::vector<RxString>*		Split(char);
+	std::vector<RxString>*		Split(char c, bool noempty = false);
 
 private:
 	unsigned int				CountSeparator(char);

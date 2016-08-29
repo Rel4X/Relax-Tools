@@ -31,7 +31,7 @@ Well, all those classes can be improved and optimized ... but I'll do it when I'
 - Useless RemoveSeparator() function.
 
   == Version 1.0 ==
-- Modify Split() so it can take multiple separators, like Split(const char*);
+- (todo ..) Modify Split() so it can take multiple separators, like Split(const char*);
 
 +-------------+
 | RxTime v1.1 |
