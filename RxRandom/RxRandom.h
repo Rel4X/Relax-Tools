@@ -1,9 +1,13 @@
 #pragma once
 
-/* Version 1.1 */
+/* Version 1.2 */
 
 #include	<random>
 #include	<ctime>
+
+#define		RX_ABS(value)		((value < 0) ? (-value) : (value))
+
+#define		FLOAT_PRECISION	10000
 
 class		RxRandom
 {
@@ -16,6 +20,12 @@ private:
 
 public:
 	static void			Init();
-	static int			Randomize(unsigned int, unsigned int);
+	static int			Randomize(int, int);
+	static float		Randomize(float, float);
+	static double		Randomize(double, double);
+
+private:
+	static int			OneIsNeg(int min, int max);
+	static double		OneIsNeg(double min, double max);
 };
 
