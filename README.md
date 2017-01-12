@@ -14,15 +14,15 @@ Well, all those classes can be improved and optimized ... but I'll do it when I'
 - Missing a HardDeleteADir() function to recursively delete a directory.
 
 +---------------+
-| RxRandom v1.1 |
+| RxRandom v1.3 |
 +---------------+
+	== Corrected on version 1.2 ==
+- Random between two signed numbers.
+- Random between two doubles.
+
 	== Corrected on version 1.1 ==
 - Can now roll between 0 and 1.
 - Can now pass parameter in any order (max, min) or (min, max).
-
-(todo)
-- Missing a function to random between two signed numbers.
-- Missing a function to random between two floats / doubles.
 
 +----------------+
 | RxWinSock v1.0 |
