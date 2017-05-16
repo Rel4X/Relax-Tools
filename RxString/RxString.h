@@ -15,8 +15,8 @@ public:
 	~RxString(void);
 
 public:
-	void						ToUpperCase();
-	void						ToLowerCase();
+	void				ToUpperCase();
+	void				ToLowerCase();
 	std::vector<RxString>*		Split(char c);
 
 private:
